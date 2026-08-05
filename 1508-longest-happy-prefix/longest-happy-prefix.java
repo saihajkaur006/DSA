@@ -18,11 +18,11 @@ class Solution {
 
                 }if(s.charAt(i)==s.charAt(j)){
                     LPS[i]=j+1;
-                    
                     j++;
                 }
                 i+=1;
             }
+
         }
         return LPS;
     }
