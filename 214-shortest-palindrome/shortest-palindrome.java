@@ -3,12 +3,12 @@ class Solution {
         StringBuilder rev=new StringBuilder(s);
         rev.reverse();
         String str=s+"$"+rev;
-        int[]LPS=countlps(str);
+        int[]LPS=lpscount(str);
         int ans=s.length()-LPS[LPS.length-1];
         String toAdd=rev.substring(0,ans);
         return toAdd+s;
     }
-    private int[] countlps(String s){
+    private int[] lpscount(String s){
         int n=s.length();
         int i=1,j=0;
         int[]LPS=new int[n];
@@ -27,7 +27,6 @@ class Solution {
                 }
                 i+=1;
             }
-
         }
         return LPS;
     }
