@@ -2,8 +2,8 @@ class Solution {
     public int lengthOfLIS(int[] nums) {
         int n=nums.length;
         List<Integer> temp= new ArrayList<>();
-
         temp.add(nums[0]);
+
         for(int i=0;i<n;i++){
             if(nums[i]>temp.get(temp.size()-1)){
                 temp.add(nums[i]);
@@ -14,5 +14,6 @@ class Solution {
             }
         }
         return temp.size();
+        
     }
 }
