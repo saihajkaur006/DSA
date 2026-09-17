@@ -1,1 +1,1 @@
-<h2>insert-interval Notes</h2><hr>[ Time taken: 55s ]
+<h2>insert-interval Notes</h2><hr>[ Time taken: 35s ]
