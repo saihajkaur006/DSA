@@ -1,10 +1,17 @@
 class Solution {
     public String reverseWords(String s) {
-        String[]words=s.split("\\s+");
-        StringBuilder sb=new StringBuilder();
+
+        //store words in array
+        String[] words=s.trim().split("\\s+");
+        StringBuilder res= new StringBuilder();
+
+        //store words in reverse order by iterating in array
         for(int i=words.length-1;i>=0;i--){
-            sb.append(words[i]).append(" ");
+            res.append(words[i]);
+            if(i!=0){
+                res.append(" ");
+            }
         }
-        return sb.toString().trim();
+        return res.toString();
     }
 }
